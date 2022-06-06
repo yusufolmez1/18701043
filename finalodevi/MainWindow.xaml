@@ -1,0 +1,30 @@
+﻿<Window x:Class="finalodevi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:finalodevi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <StackPanel Background="Aquamarine">
+        <Grid Background="Aquamarine">
+            <Label HorizontalAlignment="Center" FontSize="50" Margin="0,0,0,362" FontWeight="Bold">WPF Hesap Makinesi</Label>
+
+            <TextBox BorderThickness="3" BorderBrush="Aquamarine"  VerticalContentAlignment="Center" TextAlignment="Center" Name="numberA" Margin="247,135,531,256">0</TextBox>
+
+            <TextBox BorderThickness="3" BorderBrush="Aquamarine" VerticalContentAlignment="Center" TextAlignment="Center" Name="numberB" Margin="513,135,265,256">0</TextBox>
+
+            <Button FontWeight="Bold"  Content="Topla" Height="40" Margin="176,278,630,125" Click="AddingNumbers" Background="#FF77F57F" Foreground="#FF5F5F5F"/>
+
+            <Button FontWeight="Bold" Background="#FFFF9B91" Content="Çıkar" Height="40" Margin="313,278,489,125" Click="SubtractNumbers" Foreground="#FF5F5F5F"/>
+
+            <Button FontWeight="Bold" Background="#FFADB2FF" Content="Çarp" Height="40" Margin="450,278,352,125" Click="MultiplyNumbers" Foreground="#FF5F5F5F"/>
+
+            <Button FontWeight="Bold" Background="#FFFFD578" Content="Böl" Height="40" Margin="590,278,211,125" Click="DivideNumbers" Foreground="#FF5F5F5F"/>
+
+            <Label FontWeight="Bold" VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Left" Margin="298,0,0,0">Results:</Label>
+
+            <Label FontWeight="Bold" Name="result" VerticalAlignment="Bottom" FontSize="32" HorizontalAlignment="Left" Margin="464,0,0,0" Width="140">00</Label>
+        </Grid>
+    </StackPanel>
+</Window>
